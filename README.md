@@ -1,6 +1,10 @@
 # Hugo Minimal Blog Theme
 
+## All Posts
+
 ![All Posts](./images/all-posts.png)
+
+## Single Post
 
 ![Post](./images/post.png)
 
