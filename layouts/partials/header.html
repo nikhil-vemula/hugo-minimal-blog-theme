@@ -1,0 +1,12 @@
+<nav class="navigation">
+	<section class="container">
+		<div class="navigation-list">
+			<a class="navigation-title" href="/">{{ .Site.Title }}</a>
+			<ul class="navigation-list">
+				{{ range .Site.Menus.main }}
+				<li class="navigation-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+				{{ end }}
+			</ul>
+		</div>
+	</section>
+</nav>

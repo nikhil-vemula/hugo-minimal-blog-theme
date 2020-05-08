@@ -1,0 +1,14 @@
+<div class="post">
+	<span class="title">
+		<a href="{{ .RelPermalink }}">
+			{{.Title}}
+		</a>
+	</span>
+	{{ if isset .Params "summary" }}
+	<span class="summary">{{ .Params.Summary | truncate 80 }}</span>
+	{{ end }}
+	<span class="meta">
+		<i class="far fa-calendar"></i> {{ dateFormat "Jan 2, 2006" .Date }} · 
+		{{ if .Draft }}<span><i class="far fa-clock"></i> Work In Progress</span>{{ end }}
+	</span>
+</div>

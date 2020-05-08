@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+	color: black;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5rem;
+}
+
+footer {
+	background-color: white;
+	position: fixed;
+	bottom: 0px;
+	padding: 10px;
+	width: 100vw;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 70%;
+	width: 100vw;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#content {
+	margin: 30px auto;
+	max-width: 780px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.navigation {
+	width: 100vw;
+	line-height: 2rem;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a.navigation-title {
+	color: black;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+ul.navigation-list {
+	float: right;
+	list-style: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+}
+
+li.navigation-item {
+	font-size: 0.9rem;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+li.navigation-item a{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+/* Posts */
+ul.posts {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.post {
+	margin: 2rem;
+}
+
+.post .title {
+	font-weight: 2000;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	display: block;
+	line-height: 2.5rem;
+}
+
+.post .summary {
+	display: block;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.post .meta {
+	font-size: 0.8rem;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+/* Single post */
+.single-post {
+	margin: 2rem;
+}
+
+.single-post .title {
+	font-weight: 2000;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	display: block;
+	line-height: 3rem;
+}
+
+.single-post .summary {
+	display: block;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.single-post .meta {
+	font-size: 0.8rem;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.single-post .summary-title {
+	margin-top: 10px;
+	font-weight: 1000;
+	font-size: 1rem;
+	display: block;
+	line-height: 2.5rem;
+	text-justify: auto;
+	letter-spacing: .1rem;
+}
+
+.single-post .summary-body {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: justify;
+	text-justify: inter-word;
+}

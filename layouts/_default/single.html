@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="single-post">
+	<span class="title">{{.Title}}</span>
+	<span class="meta">
+		<i class="far fa-calendar"></i> {{ dateFormat "Jan 2, 2006" .Date }} · 
+		{{ if .Draft }}<span><i class="far fa-clock"></i> Work In Progress</span>{{ end }}
+	</span>
+	{{ if isset .Params "summary" }}
+	<span class="summary-title">TL;DR</span>
+	<div class="summary-body">&emsp;&emsp;{{ .Params.Summary }}</div>
+	{{ end }}
+	<div class="content">
+		{{ .Content }}
+	</div>
+	
+</div>
+{{ end }}
