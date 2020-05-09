@@ -1,12 +1,16 @@
 # Hugo Minimal Blog Theme
 
+## Home
+
+![Post](./images/homepage.png)
+
 ## All Posts
 
 ![All Posts](./images/all-posts.png)
 
 ## Single Post
 
-![Post](./images/post.png)
+![Post](./images/single-post.png)
 
 ## Sample Config.toml
 
