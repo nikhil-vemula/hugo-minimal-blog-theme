@@ -6,14 +6,93 @@ body {
 	line-height: 1.5rem;
 }
 
+/*Home page*/
+
+div.info {
+	width: 100%;
+	height: 80vh;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div.info h2.name {
+	margin-bottom: 5px;
+}
+
+div.info h4.title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.info h5.subtitle {
+	margin-top: 5px;
+}
+
+div.info div.social {
+	font-size: 2rem;
+}
+div.social a {
+	text-decoration: none;
+	color: lightgray;
+}
+
+div.social a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+div.social a#github:hover {
+	text-decoration: none;
+	color: black;
+}
+
+div.social a#twitter:hover {
+	text-decoration: none;
+	color: #00acee;
+}
+
+div.social a#facebook:hover {
+	text-decoration: none;
+	color: #3b5998;
+}
+
+div.social a#linkedin:hover {
+	text-decoration: none;
+	color: #0e76a8;
+}
+
+ol.nav {
+	padding-left: 0px;
+}
+
+#breadcrumbnav {
+	list-style: none;
+	display: inline;
+}
+
+#breadcrumbnav::after {
+	content: ">";
+}
+
+#breadcrumbnav:last-child::after {
+	content: "";
+}
+
 footer {
 	background-color: white;
-	position: fixed;
-	bottom: 0px;
-	padding: 10px;
-	width: 100vw;
+	padding: 2rem;
+	padding-bottom: 5px;
 	text-align: center;
 	font-size: 0.8rem;
+	position: absolute;
+	bottom: 0;
+	margin: auto;
+	max-width: 780px;
+	width: 100%;
+	height: 1rem;  
 }
 
 .container {
@@ -24,11 +103,43 @@ footer {
 	padding-right: 2rem;
 }
 
+#content-wrap {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 1.5rem;
+}
+
 #content {
-	margin: 30px auto;
+	position: relative;
+	min-height: 90vh;
+	margin: auto;
+	margin-top: 30px;
 	max-width: 780px;
 	padding-left: 2rem;
 	padding-right: 2rem;
+}
+
+/* Pagination */
+ul.pagination {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+ul.pagination li.page-item {
+	display: inline;
+	margin: 0.2rem;
+}
+
+ul.pagination li.page-item.active {
+	text-decoration: underline;	
+}
+
+ul.pagination li.page-item.disabled a{
+	color: lightgray;
+	pointer-events: none;
 }
 
 .navigation {
@@ -77,6 +188,7 @@ li.navigation-item a{
 ul.posts {
 	list-style: none;
 	padding-left: 0px;
+	margin: 0px -2rem;
 }
 
 .post {

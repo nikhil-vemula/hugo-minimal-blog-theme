@@ -1,10 +1,12 @@
 {{ define "main" }}
+{{ partial "breadcrumb.html" . }}
 <ul class="posts">
-	{{- range .Data.Pages -}}
+	{{- range .Paginator.Pages -}}
 	<!-- Exclude whose type is in params.excludedTypes or type is 'page'-->
 	{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
 	{{ partial "post-list-item.html" . }}
 	{{- end -}}
 	{{- end -}}
 </ul>
+{{ template "_internal/pagination.html" . }}
 {{ end }}

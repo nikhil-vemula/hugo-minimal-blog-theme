@@ -3,6 +3,21 @@
 	{{ partial "head.html" .}}
 	<body>
 		{{ partial "header.html" .}}
-		{{- partial "footer.html" . -}}
+		<div class="info">
+			<div class="usr-icon">
+				<img src="" alt="">
+			</div>
+			<h2 class="name">{{ .Site.Author.name }}</h2>
+			<h4 class="title">{{ .Site.Author.title }}</h4>
+			<h5 class="subtitle">{{ .Site.Author.subtitle | emojify}}</h5>
+			<div class="social">
+				{{- range $index, $key := .Site.Params.Social -}}
+				<a id="{{ $key.name }}" href="{{ $key.url }}" title="{{ $key.name }}">
+					<i class="{{ $key.icon }}"></i>
+				</a>
+				{{- end -}}
+			</div>
+		</div>
+		<!-- {{- partial "footer.html" . -}} -->
 	</body>
 </html>
