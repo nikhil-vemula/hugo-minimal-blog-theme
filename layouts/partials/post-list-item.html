@@ -8,7 +8,7 @@
 	<span class="summary">{{ .Params.Summary | truncate 80 }}</span>
 	{{ end }}
 	<span class="meta">
-		<i class="far fa-calendar"></i> {{ dateFormat "Jan 2, 2006" .Date }} · 
-		{{ if .Draft }}<span><i class="far fa-clock"></i> Work In Progress</span>{{ end }}
+		<i class="far fa-calendar"></i>&nbsp;{{ dateFormat "Jan 2, 2006" .Date }} · 
+		{{ if .Draft }}<span><i class="far fa-clock"></i>&nbsp;Work In Progress</span>{{ end }}
 	</span>
 </div>
