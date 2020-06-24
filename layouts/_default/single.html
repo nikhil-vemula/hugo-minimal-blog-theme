@@ -3,8 +3,8 @@
 <div class="single-post">
 	<span class="title">{{.Title}}</span>
 	<span class="meta">
-		<i class="far fa-calendar"></i> {{ dateFormat "Jan 2, 2006" .Date }} · 
-		{{ if .Draft }}<span><i class="far fa-clock"></i> Work In Progress</span>{{ end }}
+		<i class="far fa-calendar"></i>&nbsp;{{ dateFormat "Jan 2, 2006" .Date }} · 
+		{{ if .Draft }}<span><i class="far fa-clock"></i>&nbsp;Work In Progress</span>{{ end }}
 	</span>
 	{{ if isset .Params "summary" }}
 	<span class="summary-title">TL;DR</span>
